@@ -1,0 +1,45 @@
+// /*!
+//  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
+//  * Copyright 2011-2017 The Bootstrap Authors
+//  * Copyright 2011-2017 Twitter, Inc.
+//  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+//  */
+
+$grid-gutter-width-base: 32px;  
+  
+// Core variables and mixins 
+/*@import "@bootstrap/scss/bootstrap-grid";
+@import "@bootstrap/scss/bootstrap-reboot";*/
+@import "@bootstrap/scss/bootstrap";
+
+ 
+//Settings 
+@import "./settings/variables";
+@import "./settings/fonts";
+@import "./settings/mixins";
+@import "./settings/reset"; 
+
+
+//Libs
+@import './libs/owl-caroussel';
+@import './libs/owl-theme';
+@import './libs/animate';
+@import './libs/fancy';
+ 
+//Components
+@import "./components/buttons";
+@import "./components/generics"; 
+@import "./components/form"; 
+@import"./components/footer";
+@import "./pages/home";
+@import "./pages/videos";
+@import "./pages/produto";
+
+
+
+
+
+
+
+
+

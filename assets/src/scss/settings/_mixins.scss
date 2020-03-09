@@ -1,0 +1,41 @@
+@mixin border-radius($radius:20px) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($property:all, $duration:0.3s, $ease:ease-in-out, $delay: 0) {
+	transition: $property $duration $ease;
+	-webkit-transition: $property $duration $ease;
+	-moz-transition: $property $duration $ease;
+	-o-transition: $property $duration $ease;
+}
+@mixin transition-delay($delay: 0) {
+	transition-delay: $delay;
+	-webkit-transition-delay: $delay;
+	-moz-transition-delay: $delay;
+	-o-transition-delay: $delay;
+}
+
+
+@mixin gradient($color-1, $color-2, $direction: horizontal){
+	$direction-1: left;
+	$direction-2: right;
+	$direction-3: 1;	 
+    @if $direction == vertical {
+    	$direction-1: left;
+    	$direction-2: right;
+    	$direction-3: 1;
+	}
+	background: $color-1;
+	background: -moz-linear-gradient($direction-1, $color-1 0%, $color-2 100%);
+	background: -webkit-linear-gradient($direction-1, $color-1 0%,$color-2 100%); 
+	background: linear-gradient(to $direction-2, $color-1 0%,$color-2 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-1', endColorstr='$color-2',GradientType=$direction-3 ); 
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}

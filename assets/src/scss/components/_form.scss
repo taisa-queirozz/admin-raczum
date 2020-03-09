@@ -1,0 +1,108 @@
+input[type=text],  input[type=email], input[type=tel], input[type=password], textarea{
+    width: 100%;
+    padding: 15px 20px;
+    border: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+ 	color:$color-dark-gray;
+ 	font-family: $font-family-1;	
+    border: none;
+    font-weight: 300;
+    -webkit-appearance: none;
+    &:focus{
+        background-color:#f5f5f5;
+        color: #000;
+    }
+    &.transparent{
+        background-color: transparent;
+    }
+    &.dark{
+        background-color: transparent;
+        border: solid 1px #FFF;
+        color:#FFF;
+    }
+    &.dark-gray{
+        background-color: $color-dark-gray;
+        border: none;
+        color:#FFF; 
+    }   
+    &.search{
+        background: url(img/icons/lupa.svg) no-repeat 95% center #FFF;
+    } 
+ }
+
+textarea{
+	height: 200px;
+    font-weight: 300;
+}
+
+select{
+    background-image: url(img/icons/purple-key-down.svg);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-color: #FFF;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 15px;
+    color: #000;
+    font-size: 14px;
+    -webkit-appearance: none; 
+    font-weight: 300;   
+}
+ input[type=submit]{
+ 	color:#FFF; 
+	background-color:$color-1;
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
+    margin: .5rem 0;
+	display:inline-block;
+	border: none;
+    text-transform: uppercase;   
+    cursor: pointer;  
+    -webkit-appearance: none;
+    border-radius: 10px;  
+	@include transition(all); 
+	&:hover{
+		text-decoration:none;
+		background-color: $color-1;
+	}
+    @include media-breakpoint-down(sm) {
+        float: right;
+        margin-bottom: 25px;    
+    }
+
+}
+input, select, textarea{
+    font-family: $font-family-1;       
+}
+ 
+body{
+    div.wpcf7-response-output {
+        padding: 15px 30px !important;
+        margin: 0px 0 20px!important;
+        border:none !important;
+        float: left;
+        width: 100%;
+        text-align: center;
+         color: #FFF;
+    }
+
+    div.wpcf7-mail-sent-ok {
+        border: none;
+        background-color: $color-4;
+        color: #FFF;
+    }
+
+    div.wpcf7-validation-errors {
+        border: none;
+        background-color: $color-3;
+        color: #FFF;   
+    }
+    span.wpcf7-not-valid-tip{
+        color: $color-3;
+        font-style: italic;   
+        text-align: left; 
+    }
+}

@@ -1,0 +1,33 @@
+.box-produto{
+  background: #fff;
+}
+.box-produto-img{
+  height: 90px;
+  width: 90px;
+  display: inline-block;
+  
+  img{
+    width: 100%;
+  }
+}
+
+.box-produto-info{
+  display: inline-block;
+  h2{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  span{
+    font-size: 10px;
+  }
+}
+
+.box-produto-opcoes{
+  display: inline-block;
+    position: relative;
+    right: -90px;
+    top: -30px;
+
+}
