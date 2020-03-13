@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
 </head>
 <nav>
-  
+ 
 </nav>
 <body class="home blog logged-in">
 
@@ -26,7 +26,7 @@
            <div class="col-lg-6 col-ms-6 col-xs-6 col-right">
              <div class="tarja-data">
                <p>16 nov a 16 dez</p>
-               <a href="#">extrato</a>
+               <a data-toggle="modal" data-title="Ola mundo!" data-description="slkadj alksdj lasj daslkdj aslkdj aslj dlaksjd laksj dlkasj dlkasj lkdasj " data-target="#alert" href="javascript:void(0);">extrato</a>
             </div>
           </div>
         </div>
@@ -154,10 +154,29 @@
           </div>
       </div>
   </div>
- 
+
+<!-- Modal -->
+<div class="modal fade" id="alert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script type='text/javascript' src='assets/dist/js/plugins.js'></script>
 <script type='text/javascript' src='assets/dist/js/main.min.js'></script>
-
 
 </body>
 </html>
