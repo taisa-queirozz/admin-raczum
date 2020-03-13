@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "@fancyapps/fancybox": "^3.3.5",
+    "DatePicker": "^2.0.0",
     "bootstrap": "^4.1.0",
+    "dhx-calendar": "^6.4.2",
     "get-installed-path": "^4.0.8",
     "gulp": "^3.9.1",
     "gulp-combine-mq": "^0.4.0",

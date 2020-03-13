@@ -47,3 +47,11 @@
     font-size: 35px;
     width: 57px;
 }
+
+@media(max-width: 768px){
+
+  .footer_icons{
+    position: relative;
+    top:-16px;
+  }
+}

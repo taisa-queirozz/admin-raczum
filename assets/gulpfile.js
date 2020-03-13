@@ -47,6 +47,7 @@ function pluginsTask() {
     'node_modules/owl.carousel/dist/owl.carousel.min.js',
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',    
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
+    'node_modules/dhx-calendar/codebase/calendar.min.js',
     'node_modules/wowjs/dist/wow.min.js'
   ])
   .pipe(concat('plugins.js'))

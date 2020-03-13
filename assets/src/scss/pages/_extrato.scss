@@ -1,0 +1,94 @@
+.tarja-link-extrato{
+  background: #747474;
+}
+
+.link-extrato{
+  text-align: center;
+
+  ul{
+    margin-bottom: 0;
+    padding:0;
+
+    li{
+      display: inline-block;
+      list-style: none;
+      
+
+      a{
+        color:#fff;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding:0 20px;
+
+        &:hover{
+          border-bottom: 2px solid #FFFF8D;
+          padding-bottom: 1px;
+
+        }
+
+        &:active{
+          border-bottom: 2px solid red;
+          padding-bottom: 11px;
+        }
+      }
+    }
+  }
+}
+
+.lista-extrato-valor{
+  background: #fff;
+  padding:15px 10px;
+  border-left: solid 3px #2FB91E;
+  margin-bottom: 20px;
+
+  h2{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin:0;
+    width: 48%;
+    padding-left: 10px;
+    display: inline-block;
+  }
+
+  p{
+    text-align: right;
+    margin:0;
+    font-weight: 900;
+    width: 48%;
+    padding-left: 10px;
+    display: inline-block;
+  }
+}
+
+
+.valor-de-saque{
+  display: inline-block;
+  width: 48%;
+
+    p{
+      color: #454545;
+      font-size: 23px;
+      font-weight: 900;
+      margin:0;
+    }
+
+    span{
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #989898;
+    }
+}
+
+.botao-saque{
+  display: inline-block;
+  width: 48%;
+  text-align: right;
+  margin-bottom:15px;
+
+   
+}
+
+ @media screen and (max-width: 1200px){
+  
+ }

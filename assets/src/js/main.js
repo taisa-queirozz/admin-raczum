@@ -9,7 +9,15 @@ $(document).ready(function(){
 	 var modal = $(this);
 	  modal.find('.modal-title').html(title);
 	  modal.find('.modal-body').html(description);
+	});
 
-	})
+	var calendar = new dhx.Calendar("calendario", {
+			dateFormat:"%d %M",
+		 range: true
+	});	
+
+	calendar.events.on("change", function (date) {
+	    document.querySelector("#dataExtrato").innerHTML = calendar.getValue() ;
+	});	
 
 });

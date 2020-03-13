@@ -25,18 +25,20 @@ $grid-gutter-width-base: 32px;
 @import './libs/owl-theme';
 @import './libs/animate';
 @import './libs/fancy';
+@import './libs/calendar';
  
 //Components
 @import "./components/buttons";
 @import "./components/generics"; 
+@import "./components/modal"; 
 @import "./components/form"; 
 @import"./components/footer";
 @import "./pages/home";
 @import "./pages/videos";
 @import "./pages/produto";
-
-
-
+@import "./pages/parceiro";
+@import "./pages/extrato";
+@import "./pages/gerar-link";
 
 
 

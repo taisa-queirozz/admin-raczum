@@ -1,6 +1,7 @@
 .box-video{
   background:#fff;
-
+  padding-bottom: 10px;
+  margin-bottom:40px;
   img{
     padding-bottom:10px;
     width: 100%;
@@ -46,5 +47,42 @@
 
       }
   }
+  p{
+    display: inline-block;
+    font-size: 10px;
+    padding-left: 15px;
+    margin:0;
+    color: #757575;
+  }
 
 }
+
+
+/*VÍDEO INTERNA*/
+.parceria-paga-tl-sec{
+  
+  p{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0;
+    color: #454545;
+
+      svg{
+        fill:#454545;
+      }
+  }
+}
+
+.parceria-paga-add{
+    
+    a{
+      display: block;
+      text-align: right;
+      color:#454545;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+}
+

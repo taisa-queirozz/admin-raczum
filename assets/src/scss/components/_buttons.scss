@@ -56,3 +56,66 @@
         }       
     }
 }
+
+
+.btn-amarelo{
+  
+      background: #ffce00;
+      padding: 10px 30px;
+      color: #454545;
+      font-size: 12px;
+      border-radius: 5px;
+      vertical-align: middle;
+      position: relative;
+      top: -15px;
+      text-transform:uppercase;
+      letter-spacing: .9px;
+      font-weight: 900;  
+  
+}
+
+
+.bnt-compartilhar{
+  text-align: center;
+  display: inline-block;
+  a{
+    background: #fe0037;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    width: 150px;
+    margin-left: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    height: 35px;
+
+    svg{
+      fill:#fff;
+      padding-right: 5px;
+    }
+  }
+}
+
+
+.bnt-compartilhar-verde{
+  text-align: center;
+  display: inline-block;
+  a{
+    background: #3BBF1B;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block; 
+    width: 150px;
+    margin-left: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    height: 35px;
+
+    svg{
+      fill:#fff;
+      padding-right: 5px;
+    }
+  }
+}

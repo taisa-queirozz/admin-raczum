@@ -5,9 +5,31 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="assets/dist/main.min.css"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
+
+ <div class="modal left fade" id="menuLateral" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-footer">
+                        <a data-dismiss="modal">x</a>
+                    </div>              
+                    <div class="nav flex-sm-column flex-row">
+                        <a class="nav-item nav-link active" href="#">Home</a>
+                        <a href="#" class="nav-item nav-link">Link</a>
+                        <a href="#" class="nav-item nav-link">Link</a>
+                        <a href="#" class="nav-item nav-link">Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <nav>
- 
+  <a data-toggle="modal" data-target="#menuLateral" href="javascript:void(0);">
+     asdasdasdas
+  </a>
 </nav>
 <body class="home blog logged-in">
 
@@ -25,13 +47,11 @@
           </div>
            <div class="col-lg-6 col-ms-6 col-xs-6 col-right">
              <div class="tarja-data">
-               <p>16 nov a 16 dez</p>
-               <a data-toggle="modal" data-title="Ola mundo!" data-description="slkadj alksdj lasj daslkdj aslkdj aslj dlaksjd laksj dlkasj dlkasj lkdasj " data-target="#alert" href="javascript:void(0);">extrato</a>
+               <a data-toggle="modal" data-target="#alertExtrato" id="dataExtrato" class="">16 nov a 16 dez</a>
+               <a href="javascript:void(0);">extrato</a>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+       </div>
     </div>
   </section>
 
@@ -39,7 +59,8 @@
 
   <section class="my-5">
     <div class="container">
-      <div class="row">
+      <div class="col-lg-10 offset-lg-1 col-sm-12">
+           <div class="row">
         <div class="col-12">
           <div class="row">
             
@@ -108,6 +129,7 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
   </section>
 
@@ -131,7 +153,7 @@
                               </a>
                           </div>
                           <div class="footer_icon footer_icon-plus col text-center">
-                              <a href="#" target="_blank">
+                              <a  data-toggle="modal" data-target="#compartilhar" href="#" target="_blank">
                                <i class="fas fa-plus"></i>
                               </a>
                           </div>
@@ -154,6 +176,44 @@
           </div>
       </div>
   </div>
+
+<!-- Modal -->
+<div class="modal bottom fade" id="compartilhar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Compartilhar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="alertExtrato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="calendario"></div>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">ok</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">canvel</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="alert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
