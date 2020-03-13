@@ -11,11 +11,13 @@ $(document).ready(function(){
 	  modal.find('.modal-body').html(description);
 	});
 
-	var calendar = new dhx.Calendar("calendario", {
+	if($("#calendario").length){
+		var calendar = new dhx.Calendar("calendario", {
 			dateFormat:"%d %M",
-		 range: true
-	});	
-
+			range: true
+		});	
+	}
+	
 	calendar.events.on("change", function (date) {
 	    document.querySelector("#dataExtrato").innerHTML = calendar.getValue() ;
 	});	
