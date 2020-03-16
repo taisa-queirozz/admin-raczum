@@ -1,4 +1,4 @@
-body{
+.home{
  background: $color-3;
 }
 
@@ -6,8 +6,23 @@ body{
 
 nav{
  background: $color-1;
- height: 50px;
+ height:auto;
+ padding: 10px;
 }
+
+.nav-menu{
+      position: relative;
+    top: -40px;
+    left: 10px;
+}
+.img-logado{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #575757;
+  }
+
+
 
 .tarja-saldo{
   background: $color-2;
@@ -31,49 +46,49 @@ nav{
       color: #989898;
     }
 }
-
-
-.tarja-data{
-  display: inline-block;
-  width: 48%;
-  text-align: right;
-  margin-bottom:15px;
-
-    p{
-      font-size: 12px;
-    color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    }
-}
-
 .tarja-saldo-info{
-  display: inline-block;
-  width: 48%;
   text-align: left;
-  margin-bottom:15px;
-
-    h2{
-      color: #fff;
-      font-size: 14px;
-      display: block;
-      padding-bottom: 10px;
-
-    }
 
     p{
-      font-size: 30px;
+      font-size: 14px;
       margin: 0;
       color: #fff;
       font-weight: 900;
       }
 
     span{
-      color: #989898;
+      color: #fff;
       text-transform: uppercase;
-      font-size: 10px;
+      font-size: 14px;
       font-weight: 900;
     }
+    h2{
+      color: #fff;
+      font-size: 30px;
+      display: block;
+      padding-bottom: 10px;
+
+    }
+}
+
+
+.tarja-data{
+    text-align: right;
+
+    p{
+    font-size: 14px;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    
+      &:hover{
+        color:#ffce00;
+      }
+    }
+}
+
+.dhx_calendar{
+  width: 100%;
 }
 
 

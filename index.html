@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-
- <div class="modal left fade" id="menuLateral" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="modal-footer">
-                        <a data-dismiss="modal">x</a>
-                    </div>              
-                    <div class="nav flex-sm-column flex-row">
-                        <a class="nav-item nav-link active" href="#">Home</a>
-                        <a href="#" class="nav-item nav-link">Link</a>
-                        <a href="#" class="nav-item nav-link">Link</a>
-                        <a href="#" class="nav-item nav-link">Link</a>
-                    </div>
+<div class="modal left fade" id="menuLateral" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-footer">
+                    <a data-dismiss="modal" style="z-index:99;font-weight:900; cursor:pointer;">X</a>
+                </div>              
+                <div class="nav nav-menu flex-sm-column flex-row">
+                    <img class="img-logado" src="assets/images/blogueira-1.jpg">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a href="#" class="nav-item nav-link">Link</a>
+                    <a href="#" class="nav-item nav-link">Link</a>
+                    <a href="#" class="nav-item nav-link">Link</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 <nav>
-  <a data-toggle="modal" data-target="#menuLateral" href="javascript:void(0);">
-     asdasdasdas
+  <a class="foto-menu" data-toggle="modal" data-target="#menuLateral" href="javascript:void(0);">
+     <img class="img-logado" src="assets/images/blogueira-1.jpg">
   </a>
 </nav>
-<body class="home blog logged-in">
+<body class="home">
 
   <section class="tarja-saldo">
     <div class="container">
@@ -41,14 +41,15 @@
           <div class="col-lg-6 col-ms-6 col-xs-6 col-left">
              <div class="tarja-saldo-info">
                 <p>Boas vindas, <span>Isa Mantini</span></p>
-                <h2>R$ 99.999,99</h2>
+                
                 <strong>Saldo até o momento</strong>
+                <h2>R$ 99.999,99</h2>
             </div>
           </div>
            <div class="col-lg-6 col-ms-6 col-xs-6 col-right">
              <div class="tarja-data">
-               <a data-toggle="modal" data-target="#alertExtrato" id="dataExtrato" class="">16 nov a 16 dez</a>
-               <a href="javascript:void(0);">extrato</a>
+               <p data-toggle="modal" data-target="#alertExtrato" id="dataExtrato" class="">16 nov a 16 dez</p>
+               <a class="btn-amarelo" href="#">extrato</a>
               </div>
             </div>
        </div>
@@ -59,9 +60,7 @@
 
   <section class="my-5">
     <div class="container">
-      <div class="col-lg-10 offset-lg-1 col-sm-12">
-           <div class="row">
-        <div class="col-12">
+      
           <div class="row">
             
               <div class="col-lg-6">
@@ -128,9 +127,7 @@
            </div>
           </div>
         </div>
-      </div>
-      </div>
-    </div>
+     
   </section>
 
 <div class="footer">

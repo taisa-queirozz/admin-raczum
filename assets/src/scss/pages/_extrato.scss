@@ -89,6 +89,18 @@
    
 }
 
- @media screen and (max-width: 1200px){
-  
- }
+ @media screen and (max-width: 768px){
+    
+    .link-extrato{
+      padding:10px 0;
+
+         ul{
+          li{
+            a{
+              padding: 0 10px;
+              font-size: 12px;
+            }
+          }
+         }
+    }
+ }  
