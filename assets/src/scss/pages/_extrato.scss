@@ -38,7 +38,6 @@
 .lista-extrato-valor{
   background: #fff;
   padding:15px 10px;
-  border-left: solid 3px #2FB91E;
   margin-bottom: 20px;
 
   h2{
@@ -60,7 +59,16 @@
     display: inline-block;
   }
 }
+.lista-extrato-valor.lista-extrato-valor-aprovado{
+   border-left: solid 3px #2FB91E;
+}
 
+.lista-extrato-valor.lista-extrato-valor-pendente{
+   border-left: solid 3px #ffce00;
+}
+.lista-extrato-valor.lista-extrato-valor-reprovado{
+   border-left: solid 3px #fe0037;
+}
 
 .valor-de-saque{
   display: inline-block;
@@ -89,8 +97,18 @@
    
 }
 
- @media screen and (max-width: 768px){
-    
+ @media (max-width: 768px){
+    .texto-nome-pagina {
+
+        h2{
+          text-align: left; 
+        }
+    }
+
+    .lista-extrato-valor{
+      margin-bottom: 10px;
+    }
+
     .link-extrato{
       padding:10px 0;
 
